@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Baloo+2&family=Lexend+Exa:wght@100;200&family=Montserrat+Alternates:wght@100;200&family=Montserrat:wght@200&family=Poppins:ital,wght@0,100;0,400;0,600;1,800&family=Space+Mono&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Baloo 2', sans-serif;
+}
+body {
+    height: 100%;
+}
+html{
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    background-image:repeating-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(ronaldo.jpg);
+    background-repeat: no-repeat;
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+}
+.pic2{
+    background-image:repeating-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(messi.jpg); 
+}
+.pic3{
+    background-image:repeating-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(ronaldo1.jpg); 
+}
+.pic4{
+    background-image:repeating-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(team.jpg); 
+}
+.swiper-slide h1{
+    text-align: center;
+    font-weight: bold;
+    color: #ffff;
+    font-size: 5rem;
+}
+.swiper-slide img {
+    object-fit: cover;
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset,50%);
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(50%);
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+header{
+    background-color: #262626;
+    color: #Ffff;
+}
+.logo h2{
+    font-size:3rem;
+}
+.logo h2 span{
+    color: rgb(29, 233, 114);
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+.follow{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.follow h3{
+    font-size: 2.5rem;
+}
+.icons i{
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.follow button{
+    margin-left:1rem;
+}
+.icons{
+    display: flex;
+    gap: .5rem;
+}
+.icons a.active{
+    background-color: rgb(29, 233, 114);
+}
+.icons a{
+    color: white;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    align-items: center;
+    border-radius: 5rem;
+    transition: .3s ease-in-out;
+}
+.icons a:hover{
+    background-color: rgb(29, 233, 114);
+    border: 1px solid rgb(29, 233, 114);
+}
+.follow button{
+    padding: .5rem 2rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #ffff;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 1rem 20.4rem;
+}
+.navbar ul li a{
+    color: #Ffff;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 1rem ;
+    width: 50rem;
+    background-color: #303030;
+}
+
+.searchbar{
+    background-color: #303030;
+    width: 24rem;
+    position: relative;
+    display: flex;
+}
+.searchbar input{
+    padding: 1rem 1rem;
+    width: 100%;
+    border: 1px solid #525252; 
+    font-size: 1.6rem;   
+    outline: none;
+    color: #ffff;
+    background-color: #262626;
+}
+.searchbar input::placeholder{
+    color: #ffff;
+}
+.searchbar i{
+    position: absolute;
+    right: 1rem;
+    top: 1.3rem;
+    font-size: 1.7rem;
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container h2{
+    color: #ffff;
+}
+.data{
+    display: flex;
+    height: auto;
+    gap: 1rem;
+}
+.data .line{
+    width: .3rem;
+    height: 24rem;
+    background-color: rgb(29, 233, 114);
+}
+.more{
+    margin-top: -3rem;
+}
+.more h1{
+    font-weight: bold;
+    font-size: 11rem;
+    font-family: 'poppins', sans-serif;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    margin-top: -2rem;
+    margin-left: .7rem;
+    gap: .5rem;
+}
+.flex h4{
+font-size: 2rem;
+font-family: 'poppins', sans-serif;
+color: #Ffff;
+text-transform: uppercase;
+}
+.flex .linee{
+width: 10rem;
+height: .2rem;
+background-color: rgb(29, 233, 114);
+}
+
+.more button{
+    margin-top: 5rem;
+    width: 13rem;
+    padding: .5rem;
+    background-color:transparent;
+    border: 2px solid white;
+    outline: none;
+    color: #ffff;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+.information{
+    color: #ffffff;
+    margin-top: 15rem;
+    display: flex;
+    gap: 5rem;
+}
+.div1, .div2, .div3{
+    display: flex;
+    gap: .5rem;
+}
+ .bowl{
+    width: 4rem;
+    height: 4rem;
+    background-color: purple;
+    border-radius: 5rem;
+}
+.one{
+    background-color: rgb(29, 233, 114);
+}
+.two{
+    background-color: orange;
+}
+.score h5{
+    font-family: 'poppins', sans-serif;
+}
+.score p{
+    font-family: 'poppins', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
